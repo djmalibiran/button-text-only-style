@@ -1,0 +1,23 @@
+:root {
+    --button-text-only-style-color: #1f6fe5;
+    --button-text-only-style-color-alt: #13396c;
+}
+
+.is-style-text-only>*:first-child {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--button-text-only-style-color);
+}
+
+.is-style-text-only>*:first-child:active,
+.is-style-text-only>*:first-child:hover {
+    background: transparent;
+    border-color: transparent;
+    color: var(--button-text-only-style-color-alt);
+    text-decoration: underline;
+}
+
+.is-style-text-only>*:first-child:focus {
+    outline: var(--button-text-only-style-color) solid 3px;
+    color: var(--button-text-only-style-color);
+}
